@@ -26,4 +26,4 @@ install:
 script:
   - tox -v
 after_success:
-  - codecov --token "$CODECOV_TOKEN"
+  - codecov --token $CODECOV_TOKEN
