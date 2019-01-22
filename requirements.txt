@@ -1,0 +1,8 @@
+# Runtime dependencies
+
+django
+python-twitter
+
+# Documentation
+
+Sphinx
