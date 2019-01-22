@@ -24,6 +24,11 @@ matrix:
 install:
   - pip install tox codecov
 script:
-  - tox -v
+  #- tox -v
+  - coverage run python -m django test tests --settings=tests.settings
 after_success:
-  - bash < (curl -s https://codecov.io/bash)
+  - coverage combine --append
+  - coverage report -m
+  - codecov
+#after_success:
+#  - bash < (curl -s https://codecov.io/bash)
