@@ -22,7 +22,7 @@ cache: pip
 #      env: TOXENV=py37-dj21
 
 install:
-  - pip install tox codecov
+  - pip install django coverage codecov
 script:
   #- tox -v
   - coverage run python -m django test tests --settings=tests.settings
