@@ -1,0 +1,3 @@
+
+def nice():
+    print("nice")
