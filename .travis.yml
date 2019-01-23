@@ -27,7 +27,7 @@ install:
   - pip install django coverage codecov
 script:
   #- tox -v
-  - coverage run django test tests --settings=tests.settings
+  - coverage run -m django test tests --settings=tests.settings
 after_success:
   - coverage combine --append
   - coverage report -m
