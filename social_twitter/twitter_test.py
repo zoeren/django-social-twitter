@@ -1,3 +1,0 @@
-
-def nice():
-    print("nice")

@@ -4,7 +4,6 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-
 # Quick-start development settings - unsuitable for production
 
 SECRET_KEY = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
@@ -12,7 +11,6 @@ SECRET_KEY = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
 INTERNAL_IPS = ["127.0.0.1"]
 
 LOGGING_CONFIG = None  # avoids spurious output in tests
-
 
 # Application definition
 
@@ -74,11 +72,13 @@ CACHES = {
 
 # if os.environ.get("DJANGO_DATABASE_ENGINE") == "postgresql":
 #     DATABASES = {
-#         "default": {"ENGINE": "django.db.backends.postgresql", "NAME": "debug-toolbar"}
+#         "default": {"ENGINE": "django.db.backends.postgresql",
+#         "NAME": "debug-toolbar"}
 #     }
 # elif os.environ.get("DJANGO_DATABASE_ENGINE") == "mysql":
 #     DATABASES = {
-#         "default": {"ENGINE": "django.db.backends.mysql", "NAME": "debug_toolbar"}
+#         "default": {"ENGINE": "django.db.backends.mysql",
+#         "NAME": "debug_toolbar"}
 #     }
 # else:
 DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3"}}

@@ -1,0 +1,5 @@
+# Code coverage
+coverage==4.5.2
+
+# Used by custom scripts like runtests.py
+argparse
